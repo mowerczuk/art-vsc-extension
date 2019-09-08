@@ -1,0 +1,30 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Adaptive Reuse Technique",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.art",
+				"match": "(#((end)?(break|insert|while|select|adapt|option)|(set|output)))"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.art",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [{
+				"name": "constant.character.escape.art",
+				"match": "\\\\."
+			}]
+		}
+	},
+	"scopeName": "source.art"
+}

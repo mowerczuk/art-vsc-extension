@@ -1,0 +1,66 @@
+{
+	"Insert": {
+        "prefix": [
+          "#insert"
+        ],
+        "body": [
+		  "#insert $1",
+		  "\t$2",
+		  "#endinsert"
+        ],
+        "description": "Insert into break of specific name"
+	},
+	"Break": {
+        "prefix": [
+          "#break"
+        ],
+        "body": [
+		  "#break $1",
+		  "\t$2",
+		  "#endbreak"
+        ],
+        "description": "Placeholder for insert instruction"
+    },
+	"Select": {
+        "prefix": [
+          "#select"
+        ],
+        "body": [
+		  "#select $1",
+		  "\t$2",
+		  "#endselect"
+        ],
+        "description": "Select instruction of ART"
+    },
+	"Option": {
+        "prefix": [
+          "#option"
+        ],
+        "body": [
+		  "#option $1",
+		  "\t$2",
+		  "#endoption"
+        ],
+        "description": "Option of select"
+    },
+	"Adapt": {
+        "prefix": [
+          "#adapt"
+        ],
+        "body": [
+		  "#adapt \"$1\"",
+		  "\t$2",
+		  "#endadapt"
+        ],
+        "description": "Adapt ART pattern"
+    },
+    "Set": {
+        "prefix": [
+            "#set"
+        ],
+        "body": [
+            "#set $1 = \"$2\""
+        ],
+        "description": "Set a new variable"
+    }
+}

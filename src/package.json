@@ -1,0 +1,32 @@
+{
+    "name": "art-language-support",
+    "displayName": "ART Language support",
+    "description": "Simple language support like syntax and snippets etc for Adaptive Reuse Technique processor files ",
+    "version": "0.0.2",
+    "publisher": "maciejowerczuk",
+    "engines": {
+        "vscode": "^1.37.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "art",
+            "aliases": ["Adaptive Reuse Technique", "art"],
+            "extensions": [".art", ".spc", ".vcl"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "art",
+            "scopeName": "source.art",
+            "path": "./syntaxes/art.tmLanguage.json"
+        }],
+        "snippets": [
+            {
+                "language": "art",
+                "path": "./snippets/art.snippet.json"
+            }
+        ]
+    }
+}
