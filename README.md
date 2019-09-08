@@ -23,6 +23,9 @@ No known issues
 
 ## Release Notes
 
+### 0.0.4
+Added `otherwise|endotherwise` keywords highlighting and snippets
+
 ### 0.0.3
 Added `while|endwhile` and `output` to snippets
 

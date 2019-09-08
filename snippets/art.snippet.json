@@ -43,6 +43,17 @@
         ],
         "description": "Option of select"
     },
+    "Otherwise": {
+        "prefix": [
+          "#otherwise"
+        ],
+        "body": [
+		  "#otherwise",
+		  "\t$1",
+		  "#endotherwise"
+        ],
+        "description": "Otherwise for options of select"
+    },
 	"Adapt": {
         "prefix": [
           "#adapt"

@@ -13,16 +13,16 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.art",
-				"match": "(#((end)?(break|insert|while|select|adapt|option)|(set|output)))"
+				"match": "(#((end)?(break|insert|while|select|adapt|option|otherwise)|(set|output)))"
 			}]
 		},
 		"strings": {
 			"name": "string.quoted.double.art",
-			"begin": "\"",
-			"end": "\"",
+			"begin": "\\\"",
+			"end": "\\\"",
 			"patterns": [{
 				"name": "constant.character.escape.art",
-				"match": "\\\\."
+				"match": "\\\\"
 			}]
 		}
 	},
