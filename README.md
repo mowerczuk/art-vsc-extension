@@ -1,27 +1,26 @@
-# art-language-support README
+# ART Language syntax
 
-Very early alpha version of simple extension supporting Adaptive Requse Technique language syntax. 
+Very early alpha version of simple Visual Studio Code Extension for Adaptive Requse Technique language syntax (including highlighting and snippets). 
 
-\![alt text](images/art-animation.gif)
+![preview](images/preview.gif)
 
----
 ## Features
 
 - Highlihting basic keywords (using default theme colors)
 - Snippets for basic keywords
----
+
 ## Requirements
 
 - No requirements
----
+
 ## Extension Settings
 
 - No settings
----
+
 ## Known Issues
 
 - Highlighting combined string and variable references is bugged out (ex. \\"?@operator?\\")
----
+
 ## Release Notes
 
 ### 0.0.5
