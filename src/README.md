@@ -2,6 +2,8 @@
 
 Very early alpha version of simple extension supporting Adaptive Requse Technique language syntax. 
 
+\![alt text](images/art-animation.gif)
+
 ## Features
 
 - Highlihting basic keywords (using default theme colors)
@@ -21,8 +23,11 @@ No known issues
 
 ## Release Notes
 
+### 0.0.3
+Added `while|endwhile` and `output` to snippets
+
 ### 0.0.2
-Added `option|endoption` to keywords
+Added `option|endoption` to keywords highlighting
 
 ### 0.0.1
 Initial alpha release of ART support language extension

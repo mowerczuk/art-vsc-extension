@@ -2,7 +2,7 @@
     "name": "art-language-support",
     "displayName": "ART Language support",
     "description": "Simple language support like syntax and snippets etc for Adaptive Reuse Technique processor files ",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "maciejowerczuk",
     "engines": {
         "vscode": "^1.37.0"

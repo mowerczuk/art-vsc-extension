@@ -62,5 +62,25 @@
             "#set $1 = \"$2\""
         ],
         "description": "Set a new variable"
+    },
+    "While": {
+        "perfix": [
+            "#while"
+        ],
+        "body": [
+            "#while $1",
+            "\t$2",
+            "#endwhile"
+        ],
+        "description": "While loop over specific variable"
+    },
+    "Output": {
+        "prefix": [
+            "#output"
+        ],
+        "body": [
+            "#output $1 = \"$2\""
+        ],
+        "description": "Set output file"
     }
 }
