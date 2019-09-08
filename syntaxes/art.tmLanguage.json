@@ -14,12 +14,15 @@
 			"patterns": [{
 				"name": "keyword.control.art",
 				"match": "(#((end)?(break|insert|while|select|adapt|option|otherwise)|(set|output)))"
+			}, {
+				"name": "keyword.type.art",
+				"match": "(\\?@[a-zA-Z0-9]+\\?)"
 			}]
 		},
 		"strings": {
 			"name": "string.quoted.double.art",
-			"begin": "\\\"",
-			"end": "\\\"",
+			"begin": "\"",
+			"end": "\"",
 			"patterns": [{
 				"name": "constant.character.escape.art",
 				"match": "\\\\"
