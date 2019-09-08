@@ -3,13 +3,117 @@
 	"name": "Adaptive Reuse Technique",
 	"patterns": [
 		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
+			"include": "#option-statement"
 		}
 	],
 	"repository": {
+		"expression": {
+			"patterns": [{
+				"include": "#identifier"
+			}]
+		},
+
+		"statement": {
+			"patterns": [{
+				"include": "#option-statement"
+			}]
+		},
+
+		"option-statement": {
+			"begin": "(?<!\\.)#\\b(option)\\b\\s*(?=\\s)",
+			"beginCaptures": {
+				"0": {
+					"name": "keyword.control.option.art"
+				}
+			},
+			"end": "(?<=(#endoption))",
+			"endCaptures": {
+				"0": {
+					"name": "keyword.control.option.close.art"
+				}
+			},
+			"patterns": [
+				{
+					"begin": "(?<=(option))\\s",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.whitespace.open.cs"
+						}
+					},
+					"end": "\\s",
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.whitespace.close.cs"
+						}
+					},
+					"patterns": [
+						{
+							"include": "#expression"
+						}
+					]
+				},
+				{
+					"begin": "\\s",
+					"beginCaptures": {
+						"0": {
+							"name": "keyword.control.option.open.art"
+						}
+					},
+					"end": "#endoption",
+					"endCaptures": {
+						"0": {
+							"name": "keyword.control.option.close.art"
+						}
+					},
+					"patterns": [
+						{
+							"include": "#statement"
+						}
+					]
+				}
+			]
+		},
+		"switch-label": {
+			"patterns": [
+				{
+					"begin": "(?<!\\.)\\b(case)\\b\\s+",
+					"beginCaptures": {
+						"1": {
+							"name": "keyword.control.case.cs"
+						}
+					},
+					"end": ":",
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.separator.colon.cs"
+						}
+					},
+					"patterns": [
+						{
+							"include": "#expression"
+						}
+					]
+				},
+				{
+					"match": "(?<!\\.)\\b(default)\\b\\s*(:)",
+					"captures": {
+						"1": {
+							"name": "keyword.control.default.cs"
+						},
+						"2": {
+							"name": "punctuation.separator.colon.cs"
+						}
+					}
+				}
+			]
+		},
+
+
+		"identifier": {
+			"name": "variable.other.readwrite.cs",
+			"match": "@?[_[:alpha:]][_[:alnum:]]*"
+		},
+
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.art",
