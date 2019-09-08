@@ -4,6 +4,7 @@
     "description": "Simple language support like syntax and snippets etc for Adaptive Reuse Technique processor files ",
     "version": "0.0.3",
     "publisher": "maciejowerczuk",
+    "repository": {"url": "https://github.com/mowerczuk/art-vsc-extension.git"},
     "engines": {
         "vscode": "^1.37.0"
     },
