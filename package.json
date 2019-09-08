@@ -2,7 +2,7 @@
     "name": "art-language-support",
     "displayName": "ART Language support",
     "description": "Simple language support like syntax and snippets etc for Adaptive Reuse Technique processor files ",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "publisher": "maciejowerczuk",
     "repository": {"url": "https://github.com/mowerczuk/art-vsc-extension.git"},
     "engines": {
